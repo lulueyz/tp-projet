@@ -10,14 +10,14 @@
     </div>
     <div class="col-8">
         <dl>
-            <dd>Articles</dd>
-            <dt><?= $article->titre ?></dt>
+            <dt>Articles</dt>
+            <dd><?= $article->titre ?></dd>
 
-            <dd>Contenu</dd>
-            <dt><?= $article->contenu ?></dt>
+            <dt>Contenu</dt>
+            <dd><?= $article->contenu ?></dd>
 
-            <dd>date_de_publication</dd>
-            <dt><?= $article->date_de_publication ?></dt>
+            <dt>date_de_publication</dt>
+            <dd><?= $article->date_de_publication ?></dd>
         </dl>
     </div>
 </div>

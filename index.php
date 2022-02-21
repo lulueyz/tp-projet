@@ -3,10 +3,10 @@
 /* session_start();
 
 include_once 'config.php';
-include_once 'function.php'; */
+ */
 
 
-
+include_once 'function.php';
 include_once 'models/SimpleOrm.php';
 $conn = new mysqli("localhost", "root", "");
 
@@ -32,8 +32,16 @@ switch ($route) {
 
     case 'details-article':
         include __DIR__ . '/controllers/details-article-controlleur.php';
-        break;    
+        break;
 
+    case 'ajouter-article':
+        include __DIR__ . '/controllers/ajouter-article-controlleur.php';
+        break;
+
+    case 'ajouter-article-handler':
+        include __DIR__ . '/controllers/ajouter-article-handler-controlleur.php';
+        break;
+    
 
     default:
         die('Erreur 404');
