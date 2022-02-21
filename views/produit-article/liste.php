@@ -7,15 +7,19 @@
 <div class="row">
     <?php foreach ($articles as $article) { ?>
         <div class="card col-3">
-        <img class="card-img-top" src="<?= $article->image ?>" alt="">
-        <div class="card-body">
-            <h4 class="card-title"><?= $article->titre ?></h4>
-            <p class="card-text"><?= $article->contenu?></p>
-        </div>   
+            <img class="card-img-top" src="<?= $article->image ?>" alt="">
+            <div class="card-body">
+                <h4 class="card-title"><?= $article->titre ?></h4>
+                <p class="card-text"><?= $article->contenu ?></p>
+                <p class="card-text">
+                    <a class="text-align-right" href="index.php?route=details-article&id=<?= $article->id ?>">Lire l'article</a>
+                </p>
 
-    </div>
+            </div>
+
+        </div>
     <?php } ?>
-        
+
 </div>
 
 

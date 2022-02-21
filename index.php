@@ -28,9 +28,11 @@ switch ($route) {
 
     case 'articles':
         include __DIR__ . '/controllers/articles-controlleur.php';
-        
         break;
 
+    case 'details-article':
+        include __DIR__ . '/controllers/details-article-controlleur.php';
+        break;    
 
 
     default:
