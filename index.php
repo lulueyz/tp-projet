@@ -1,10 +1,9 @@
 <?php
 
-/* session_start();
+session_start();
 
-include_once 'config.php';
- */
-
+/* include_once 'config.php'; */
+ 
 
 include_once 'function.php';
 include_once 'models/SimpleOrm.php';
@@ -50,7 +49,14 @@ switch ($route) {
     case 'supprimer-article':
         include __DIR__ . '/controllers/supprimer-article-controlleur.php';
         break;
-    
+
+    case 'connexion':
+        include __DIR__ . '/controllers/authentication/connexion-controlleur.php';
+        break;
+
+    case 'connexion-handler':
+        include __DIR__ . '/controllers/authentication/connexion-handler-controlleur.php';
+        break;
 
     default:
         die('Erreur 404');
