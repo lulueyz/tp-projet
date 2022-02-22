@@ -9,7 +9,7 @@ if(
     && date_create_from_format('Y-m-d',$_POST['date_de_publication'])
 
     && filter_var($_POST['image'], FILTER_VALIDATE_URL) !== false
-){
+) {
 
   include __DIR__ . '/../models/article.php';
   $article = new Article;
@@ -22,3 +22,4 @@ if(
 
   redirection('articles');
 } else redirection('ajouter-article');
+

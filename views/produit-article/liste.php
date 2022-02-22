@@ -13,6 +13,11 @@
                 <p class="card-text"><?= $article->contenu ?></p>
                 <p class="card-text">
                     <a class="text-align-right" href="index.php?route=details-article&id=<?= $article->id ?>">Lire l'article</a>
+                    <a class="text-align-right" href="index.php?route=modifier-article&id=<?= $article->id ?>">Modifier</a>
+                    <a class="text-align-right text-danger ml-2" href="index.php?route=supprimer-article&id=<?= $article->id ?>" onclick="return confirm('Etes-vous certains de vouloir supprimer ?')">Supprimer</a>
+            
+
+
                 </p>
 
             </div>
@@ -21,21 +26,4 @@
     <?php } ?>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php include __DIR__ . '/../parties/footer.php';
