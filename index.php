@@ -58,6 +58,12 @@ switch ($route) {
         include __DIR__ . '/controllers/authentication/connexion-handler-controlleur.php';
         break;
 
+
+    case 'deconnexion':
+        include __DIR__ . '/controllers/authentication/deconnexion-controlleur.php';
+        break;
+
+
     default:
         die('Erreur 404');
 }

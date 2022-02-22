@@ -2,7 +2,7 @@
     <a class="accueil-link" href="index.php?route=home">Accueil</a>
     <a class="accueil-link" href="index.php?route=articles">Liste articles</a>
 
-    <?php if (empty($_SESSION['identifiant']) && $_SESSION['pseudo'] == 'admin') : ?>
+    <?php if (!empty($_SESSION['identifiant']) && $_SESSION['identifiant'] == 'admin') : ?>
         <a class="accueil-link" href="index.php?route=ajouter-article">Ajouter un Article</a>
     <?php endif; ?>
 
